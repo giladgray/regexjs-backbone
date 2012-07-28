@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @regex.title %>
+</p>
+
+<p>
+  <b>Pattern:</b>
+  <%= @regex.pattern %>
+</p>
+
+<p>
+  <b>Modifiers:</b>
+  <%= @regex.modifiers %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @regex.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_regex_path(@regex) %> |
+<%= link_to 'Back', regexes_path %>

@@ -1,0 +1,33 @@
+<%= form_for(@regex) do |f| %>
+  <% if @regex.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@regex.errors.count, "error") %> prohibited this regex from being saved:</h2>
+
+      <ul>
+      <% @regex.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :pattern %><br />
+    <%= f.text_field :pattern %>
+  </div>
+  <div class="field">
+    <%= f.label :modifiers %><br />
+    <%= f.text_field :modifiers %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_field :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

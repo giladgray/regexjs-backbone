@@ -1,0 +1,22 @@
+<header >
+	<span class="btn-group pull-left">
+		<button class="btn btn-mini remove"><i class="icon-remove"></i></button>
+		<button class="btn btn-mini clapse" data-toggle="collapse" data-target="#test<%= @id %>"><i class="icon-minus"></i></button>
+	</span>
+	<button class="btn btn-mini pull-right resize"><i class="icon-resize-full"></i></button>
+	TEST <%= @id %>
+</header>
+<div id="test<%= @id %>" class="result collapse in">
+	<label class="strings">
+		Test String
+		<textarea name="testString" id="testString" class="string" rows="2"><%= @string %></textarea>
+	</label>
+	<label class="matches">
+		String Match
+		<textarea name="testMatch" id="testMatch" class="match" rows="2" disabled></textarea>
+	</label>
+	<label>
+		Capture Groups
+		<ol class="captures"></ol>
+	</label>
+</div>

@@ -1,0 +1,21 @@
+<div class="header fixed-top">
+	<div class="regex">
+		<span class="fore slash">///</span>
+		<textarea name="regex" id="regex" rows="3" autofocus></textarea>
+		<span class="aft slash">///</span>
+		<input type="text" name="options" id="options" class="input-mini modifiers" />
+	</div>
+	<div class="alert alert-error hide" id="error"></div>
+</div>
+<div class="container">
+	<div class="options">
+		<div class="btn-group pull-right">
+			<button class="btn" id="expand"><i class="icon-plus"></i> Expand All</button>
+			<button class="btn" id="clapse"><i class="icon-minus"></i> Collapse All</button>
+		</div>
+		<div class="input-append">
+			<input type="text" id="newTest" placeholder="Add a new test string"><button id="addTest" class="btn btn-primary">+</button>
+		</div>
+	</div>
+	<ul id="tests"></ul>
+</div>

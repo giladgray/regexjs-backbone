@@ -1,0 +1,3 @@
+<li>
+	<span class="capture"><%= @capture %></span>
+</li>
